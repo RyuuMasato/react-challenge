@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Arrow from './Arrow.js';
 
 class OrientationTracker extends Component {
   state = {
@@ -34,6 +35,7 @@ class OrientationTracker extends Component {
         <div>{this.state.alpha}</div>
         <div>{this.state.beta}</div>
         <div>{this.state.gamma}</div>
+        <Arrow pointDirection={this.state.absolute}/>
       </React.Fragment>
     );
   } 
