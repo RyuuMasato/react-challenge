@@ -6,7 +6,7 @@ class Arrow extends Component{
             "test", this.props.pointDirection
         )
         return(
-            <img src="pointer.png" style={{tranform:this.props.pointDirection+"deg"}} />
+            <img src="pointer.png" style={{tranform:`rotate(${this.props.pointDirection}deg)`}} />
         );
     }
 }
