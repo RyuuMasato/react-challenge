@@ -35,7 +35,7 @@ class OrientationTracker extends Component {
         <div>{this.state.alpha}</div>
         <div>{this.state.beta}</div>
         <div>{this.state.gamma}</div>
-        <Arrow pointDirection={this.state.absolute}/>
+        <Arrow pointDirection={this.state.alpha}/>
       </React.Fragment>
     );
   } 
