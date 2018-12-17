@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Counter from './Counter.js'
+import OrientationTracker from './OrientationTracker.js'
 import logo from './logo.svg';
 import './App.css';
 
@@ -19,6 +21,9 @@ class App extends Component {
           >
             Learn React
           </a>
+
+          <OrientationTracker/>
+
         </header>
       </div>
     );
