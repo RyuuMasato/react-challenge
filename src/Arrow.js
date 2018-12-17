@@ -5,8 +5,9 @@ class Arrow extends Component{
         console.log(
             "test", this.props.pointDirection
         )
+        const transform = this.props.pointDirection ? `rotate(${Math.floor(this.props.pointDirection)}deg)` : "rotate(0deg)";
         return(
-            <img src="pointer.png" style={{tranform:`rotate(${this.props.pointDirection}deg)`}} />
+            <img src="pointer.png" style={{transform}} />
         );
     }
 }
